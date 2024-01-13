@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MultiPaymentsActivity">
+
+    <!--<EditText
+        android:id="@+id/dateStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="@string/staring_date"
+        android:layout_above="@+id/monthCount"
+        android:layout_marginBottom="20dp"
+        />
+
+    <EditText
+        android:id="@+id/monthCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:inputType="number"
+        android:hint="@string/number_of_months"
+        /> -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FromTV"
+            android:text="@string/from"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"/>
+        <LinearLayout
+            android:id="@+id/FromLayout"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@+id/FromTV"
+            android:weightSum="2">
+            <Spinner
+                android:id="@+id/FromMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"/>
+
+            <Spinner
+                android:id="@+id/FromYear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ToTV"
+            android:text="@string/to"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/FromLayout"
+            android:layout_marginStart="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ToLayout"
+            android:layout_below="@id/ToTV"
+            android:weightSum="2">
+
+            <Spinner
+                android:id="@+id/ToMonth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"/>
+
+            <Spinner
+                android:id="@+id/ToYear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/insertMulti"
+            android:text="@string/save"
+            android:layout_below="@id/ToLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

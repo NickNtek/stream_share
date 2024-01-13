@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:enabled="true"
+            android:hint="Username" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/usernameEditText"
+            android:layout_marginTop="25dp"
+            android:hint="First Name"
+            android:id="@+id/firstNameEditText"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/firstNameEditText"
+            android:layout_marginTop="25dp"
+            android:hint="Last Name"
+            android:id="@+id/lastNameEditText"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitUserButton"
+            android:text="Submit"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
+            android:layout_below="@+id/lastNameEditText"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CancelUserButton"
+            android:text="Cancel"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lastNameEditText"/>
+    </RelativeLayout>
+</RelativeLayout>
